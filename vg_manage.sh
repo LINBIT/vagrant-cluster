@@ -12,4 +12,5 @@ vgscan
 pvcreate /dev/loop0
 vgcreate drbdpool /dev/loop0
 
-dbus-drbdmanaged-service&
+ln -s /usr/local/bin/dbus-drbdmanaged-service /usr/bin
+source /etc/bash_completion.d/drbdmanage
